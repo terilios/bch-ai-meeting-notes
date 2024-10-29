@@ -1,0 +1,171 @@
+{
+  "type": "object",
+  "required": ["meeting_effectiveness", "participation_engagement", "action_item_management", "risk_management", "communication_quality"],
+  "properties": {
+    "meeting_effectiveness": {
+      "type": "object",
+      "required": ["decision_quality", "time_management", "objective_achievement"],
+      "properties": {
+        "decision_quality": {
+          "type": "object",
+          "required": ["score", "justification", "evidence"],
+          "properties": {
+            "score": {"type": "integer", "minimum": 0, "maximum": 100},
+            "justification": {"type": "string"},
+            "evidence": {"type": "string"}
+          }
+        },
+        "time_management": {
+          "type": "object",
+          "required": ["score", "justification", "evidence"],
+          "properties": {
+            "score": {"type": "integer", "minimum": 0, "maximum": 100},
+            "justification": {"type": "string"},
+            "evidence": {"type": "string"}
+          }
+        },
+        "objective_achievement": {
+          "type": "object",
+          "required": ["score", "justification", "evidence"],
+          "properties": {
+            "score": {"type": "integer", "minimum": 0, "maximum": 100},
+            "justification": {"type": "string"},
+            "evidence": {"type": "string"}
+          }
+        }
+      }
+    },
+    "participation_engagement": {
+      "type": "object",
+      "required": ["attendee_contribution", "discussion_quality", "collaboration_level"],
+      "properties": {
+        "attendee_contribution": {
+          "type": "object",
+          "required": ["score", "justification", "evidence"],
+          "properties": {
+            "score": {"type": "integer", "minimum": 0, "maximum": 100},
+            "justification": {"type": "string"},
+            "evidence": {"type": "string"}
+          }
+        },
+        "discussion_quality": {
+          "type": "object",
+          "required": ["score", "justification", "evidence"],
+          "properties": {
+            "score": {"type": "integer", "minimum": 0, "maximum": 100},
+            "justification": {"type": "string"},
+            "evidence": {"type": "string"}
+          }
+        },
+        "collaboration_level": {
+          "type": "object",
+          "required": ["score", "justification", "evidence"],
+          "properties": {
+            "score": {"type": "integer", "minimum": 0, "maximum": 100},
+            "justification": {"type": "string"},
+            "evidence": {"type": "string"}
+          }
+        }
+      }
+    },
+    "action_item_management": {
+      "type": "object",
+      "required": ["task_clarity", "resource_allocation", "followup_planning"],
+      "properties": {
+        "task_clarity": {
+          "type": "object",
+          "required": ["score", "justification", "evidence"],
+          "properties": {
+            "score": {"type": "integer", "minimum": 0, "maximum": 100},
+            "justification": {"type": "string"},
+            "evidence": {"type": "string"}
+          }
+        },
+        "resource_allocation": {
+          "type": "object",
+          "required": ["score", "justification", "evidence"],
+          "properties": {
+            "score": {"type": "integer", "minimum": 0, "maximum": 100},
+            "justification": {"type": "string"},
+            "evidence": {"type": "string"}
+          }
+        },
+        "followup_planning": {
+          "type": "object",
+          "required": ["score", "justification", "evidence"],
+          "properties": {
+            "score": {"type": "integer", "minimum": 0, "maximum": 100},
+            "justification": {"type": "string"},
+            "evidence": {"type": "string"}
+          }
+        }
+      }
+    },
+    "risk_management": {
+      "type": "object",
+      "required": ["risk_identification", "mitigation_planning", "contingency_planning"],
+      "properties": {
+        "risk_identification": {
+          "type": "object",
+          "required": ["score", "justification", "evidence"],
+          "properties": {
+            "score": {"type": "integer", "minimum": 0, "maximum": 100},
+            "justification": {"type": "string"},
+            "evidence": {"type": "string"}
+          }
+        },
+        "mitigation_planning": {
+          "type": "object",
+          "required": ["score", "justification", "evidence"],
+          "properties": {
+            "score": {"type": "integer", "minimum": 0, "maximum": 100},
+            "justification": {"type": "string"},
+            "evidence": {"type": "string"}
+          }
+        },
+        "contingency_planning": {
+          "type": "object",
+          "required": ["score", "justification", "evidence"],
+          "properties": {
+            "score": {"type": "integer", "minimum": 0, "maximum": 100},
+            "justification": {"type": "string"},
+            "evidence": {"type": "string"}
+          }
+        }
+      }
+    },
+    "communication_quality": {
+      "type": "object",
+      "required": ["information_clarity", "documentation_quality", "followup_communication"],
+      "properties": {
+        "information_clarity": {
+          "type": "object",
+          "required": ["score", "justification", "evidence"],
+          "properties": {
+            "score": {"type": "integer", "minimum": 0, "maximum": 100},
+            "justification": {"type": "string"},
+            "evidence": {"type": "string"}
+          }
+        },
+        "documentation_quality": {
+          "type": "object",
+          "required": ["score", "justification", "evidence"],
+          "properties": {
+            "score": {"type": "integer", "minimum": 0, "maximum": 100},
+            "justification": {"type": "string"},
+            "evidence": {"type": "string"}
+          }
+        },
+        "followup_communication": {
+          "type": "object",
+          "required": ["score", "justification", "evidence"],
+          "properties": {
+            "score": {"type": "integer", "minimum": 0, "maximum": 100},
+            "justification": {"type": "string"},
+            "evidence": {"type": "string"}
+          }
+        }
+      }
+    }
+  }
+}
